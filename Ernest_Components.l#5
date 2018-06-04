@@ -338,7 +338,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
 <rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 </package>
-<package name="BOURNS_POT">
+<package name="POT_3296W">
 <pad name="P$1" x="-2.54" y="0" drill="0.7112" diameter="1.27"/>
 <pad name="P$2" x="0" y="0" drill="0.7112" diameter="1.27"/>
 <pad name="P$3" x="2.54" y="0" drill="0.7112" diameter="1.27"/>
@@ -414,6 +414,33 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="-0.7" y1="0.96" x2="-0.7" y2="-1.04" width="0.254" layer="94" curve="-102.680383"/>
 <wire x1="0.22" y1="0" x2="1" y2="0" width="0.254" layer="94"/>
 <wire x1="-0.3" y1="0" x2="-1" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="POT">
+<text x="-2.984" y="3.524" size="1.778" layer="95">&gt;Name</text>
+<text x="2.016" y="2.984" size="1.778" layer="96">&gt;Value</text>
+<wire x1="0" y1="0.8" x2="-0.5" y2="-0.8" width="0.15" layer="94"/>
+<wire x1="0" y1="0.8" x2="0.6" y2="-0.8" width="0.15" layer="94"/>
+<wire x1="0.6" y1="-0.8" x2="1" y2="0.8" width="0.15" layer="94"/>
+<wire x1="1" y1="0.8" x2="1.5" y2="-0.8" width="0.15" layer="94"/>
+<wire x1="1.5" y1="-0.8" x2="2" y2="0.8" width="0.15" layer="94"/>
+<wire x1="2" y1="0.8" x2="2.25" y2="0" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-0.8" x2="-1" y2="0.8" width="0.15" layer="94"/>
+<wire x1="-1" y1="0.8" x2="-1.5" y2="-0.8" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="-0.8" x2="-2" y2="0.8" width="0.15" layer="94"/>
+<wire x1="-2" y1="0.8" x2="-2.25" y2="0" width="0.15" layer="94"/>
+<wire x1="2.25" y1="0" x2="3" y2="0" width="0.15" layer="94"/>
+<wire x1="-2.25" y1="0" x2="-3" y2="0" width="0.15" layer="94"/>
+<wire x1="0" y1="0.8" x2="0.4" y2="1.4" width="0.15" layer="94"/>
+<wire x1="0" y1="0.8" x2="-0.4" y2="1.4" width="0.15" layer="94"/>
+<wire x1="-0.4" y1="1.4" x2="0" y2="1.4" width="0.15" layer="94"/>
+<wire x1="0" y1="1.4" x2="0.4" y2="1.4" width="0.15" layer="94"/>
+<pin name="1" x="-3" y="0" visible="off" length="point"/>
+<pin name="2" x="0" y="2" visible="off" length="point"/>
+<pin name="3" x="3" y="0" visible="off" length="point"/>
+<wire x1="0.5" y1="-1" x2="0" y2="-1.4" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-1" x2="0" y2="-0.7" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-1" x2="-0.8" y2="-1" width="0.15" layer="94"/>
+<wire x1="0" y1="2" x2="0" y2="1.4" width="0.15" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -608,6 +635,25 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value=" " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POT" prefix="VR">
+<gates>
+<gate name="G$1" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POT_3296W">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name="">
