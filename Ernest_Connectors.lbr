@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -146,12 +146,12 @@
 <packages>
 <package name="PHEONIX_1844252">
 <description>Footprint for Pheonix-1844252 connector. &lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1844252.pdf"&gt;https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1844252.pdf&lt;/a&gt;</description>
-<pad name="3" x="-1.75" y="0" drill="1.2"/>
-<pad name="2" x="-5.25" y="0.1" drill="1.2"/>
-<pad name="1" x="-8.75" y="0.1" drill="1.2" shape="square"/>
-<pad name="4" x="1.75" y="0" drill="1.2"/>
-<pad name="5" x="5.25" y="0" drill="1.2"/>
-<pad name="6" x="8.75" y="0" drill="1.2"/>
+<pad name="3" x="-1.75" y="0" drill="1.3208"/>
+<pad name="2" x="-5.25" y="0.1" drill="1.3208"/>
+<pad name="1" x="-8.75" y="0.1" drill="1.3208" shape="square"/>
+<pad name="4" x="1.75" y="0" drill="1.3208"/>
+<pad name="5" x="5.25" y="0" drill="1.3208"/>
+<pad name="6" x="8.75" y="0" drill="1.3208"/>
 <wire x1="-11.2" y1="1.2" x2="11.2" y2="1.2" width="0.127" layer="51"/>
 <wire x1="11.2" y1="1.2" x2="11.2" y2="-4.8" width="0.127" layer="51"/>
 <wire x1="11.2" y1="-4.8" x2="11.2" y2="-8" width="0.127" layer="51"/>
